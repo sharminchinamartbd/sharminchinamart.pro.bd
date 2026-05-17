@@ -953,7 +953,8 @@ button { cursor: pointer; font-family: var(--font-bn); }
 .review-slider {
   display: flex;
   gap: 20px;
-  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* আগের ট্রানজিশন ডিলিট করে নিচের লাইনটা দিন, 0.8s মানে একটু স্লো এবং স্মুথ হবে */
+  transition: transform 0.8s ease-in-out; 
   will-change: transform;
 }
 .review-card {
